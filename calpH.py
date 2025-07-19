@@ -64,11 +64,11 @@ if menu == "Beranda":
     # Informasi pembuat
     st.markdown("""
     ### Dibuat Oleh:
-    - Amar Evan Gading (2460321)
-    - Diandra Namira Zahfa (2460360)
+    - Amar Evan Gading        (2460321)
+    - Diandra Namira Zahfa    (2460360)
     - Lutfhia Salwani Fatonah (2460410)
-    - Nevi Sahara (2460471)
-    - Taufan Aliafi (2460525)
+    - Nevi Sahara             (2460471)
+    - Taufan Aliafi           (2460525)
     """)
 
 elif menu == "Hitung pH":
@@ -135,6 +135,7 @@ elif menu == "Tentang Aplikasi":
     ### 3. Contoh Soal:
     Hitung pH dari larutan HCl 0.01 M (Asam Kuat)
     - Rumus: pH = -log [H⁺] = -log(0.01) = 2.00
+    
     Hitung pH dari NH₃ 0.1 M, Kb = 1.8 × 10⁻⁵ (Basa Lemah)
     - [OH⁻] = √(Kb × [B]) = √(1.8e-5 × 0.1) ≈ 1.34×10⁻³
     - pOH = -log(1.34e-3) ≈ 2.87
