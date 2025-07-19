@@ -125,13 +125,17 @@ elif menu == "Tentang Aplikasi":
     - pH < 7 : larutan bersifat asam
     - pH = 7 : larutan netral
     - pH > 7 : larutan bersifat basa
-                
+    """)
+    
+    st.markdown("""          
     ### 2. Rumus pH yang Digunakan:
     - Asam Kuat : pH = -log[H⁺]
     - Basa Kuat : pH = 14 - (-log[OH⁻])
     - Asam Lemah: pH = -log(√(Ka × [HA]))
     - Basa Lemah: pH = 14 - log(√(Kb × [B]))
-                
+    """)
+    
+    st.markdown("""     
     ### 3. Contoh Soal:
     Hitung pH dari larutan HCl 0.01 M (Asam Kuat)
     - Rumus: pH = -log [H⁺] = -log(0.01) = 2.00
