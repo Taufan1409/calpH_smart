@@ -4,26 +4,44 @@ import math
 # Konfigurasi halaman
 st.set_page_config(page_title="Smart Kalkulator pH", layout="centered")
 
-# Tema warna hitam dengan font putih dan navigasi hitam
+# Tema warna biru dengan font putih dan navigasi hitam
 st.markdown("""
     <style>
+    /* Ubah warna latar belakang utama */
     body, .stApp {
         background-color: #537895;
         color: white;
     }
+
+    /* Ubah semua teks termasuk heading dan input */
     h1, h2, h3, h4, h5, h6, p, label, .stTextInput, .stSelectbox, .stNumberInput, .stMarkdown, .stButton, .stRadio > div {
         color: white !important;
     }
+
+    /* Styling tombol */
     .stButton > button {
         background-color: #1e3a8a;
         color: white;
         border-radius: 8px;
     }
-    .stSidebar .css-1d391kg{ /ini untuk mengubah warna font sidebar/
+
+    /* Styling khusus sidebar */
+    .stSidebar {
+        background-color: black !important;
+    }
+
+    /* Warna font pada radio (navigasi sidebar) */
+    section[data-testid="stSidebar"] .stRadio label {
+        color: black !important;
+    }
+
+    /* Optional: Ubah warna teks judul sidebar jika ada */
+    section[data-testid="stSidebar"] .css-1cypcdb {
         color: black !important;
     }
     </style>
 """, unsafe_allow_html=True)
+
 
 # Sidebar Navigasi
 menu = st.sidebar.radio("Navigasi", ["Beranda", "Hitung pH", "Tentang Aplikasi"])
@@ -99,7 +117,7 @@ elif menu == "Hitung pH":
 
 elif menu == "Tentang Aplikasi":
     st.header("📘 Tentang Aplikasi")
-    
+
     st.markdown("""
     ### 1. Apa itu pH?
     pH adalah ukuran konsentrasi ion hidrogen (H⁺) dalam larutan. Skala pH berkisar dari 0 sampai 14:
