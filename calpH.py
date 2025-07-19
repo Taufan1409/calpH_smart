@@ -30,17 +30,19 @@ menu = st.sidebar.radio("Navigasi", ["Beranda", "Hitung pH", "Tentang Aplikasi"]
 
 if menu == "Beranda":
     st.title("Selamat Datang di Smart Kalkulator pH")
+
     # Menampilkan gambar dengan ukuran custom (HTML)
     st.markdown(
         """
         <div style="text-align: center;">
-            <img src=""
-                  alt="Ilustrasi Kimia"
-                  width="250">
+            <img src="https://cdn.pixabay.com/photo/2013/07/13/13/48/chemistry-161575_640.png" 
+                 alt="Ilustrasi Kimia" 
+                 width="250">
         </div>
         """,
         unsafe_allow_html=True
     )
+
     # Informasi pembuat
     st.markdown("""
     ### Dibuat Oleh:
