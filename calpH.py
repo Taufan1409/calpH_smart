@@ -99,17 +99,20 @@ elif menu == "Hitung pH":
 
 elif menu == "Tentang Aplikasi":
     st.header("📘 Tentang Aplikasi")
+    
     st.markdown("""
     ### 1. Apa itu pH?
     pH adalah ukuran konsentrasi ion hidrogen (H⁺) dalam larutan. Skala pH berkisar dari 0 sampai 14:
-    - pH < 7: larutan bersifat asam
-    - pH = 7: larutan netral
-    - pH > 7: larutan bersifat basa
+    - pH < 7 : larutan bersifat asam
+    - pH = 7 : larutan netral
+    - pH > 7 : larutan bersifat basa
+                
     ### 2. Rumus pH yang Digunakan:
-    - Asam Kuat: pH = -log[H⁺]
-    - Basa Kuat: pH = 14 - (-log[OH⁻])
+    - Asam Kuat : pH = -log[H⁺]
+    - Basa Kuat : pH = 14 - (-log[OH⁻])
     - Asam Lemah: pH = -log(√(Ka × [HA]))
     - Basa Lemah: pH = 14 - log(√(Kb × [B]))
+                
     ### 3. Contoh Soal:
     Hitung pH dari larutan HCl 0.01 M (Asam Kuat)
     - Rumus: pH = -log [H⁺] = -log(0.01) = 2.00
