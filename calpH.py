@@ -120,7 +120,8 @@ elif menu == "Tentang Aplikasi":
 
     st.markdown("""
     ### 1. Apa itu pH?
-    pH adalah ukuran konsentrasi ion hidrogen (H⁺) dalam larutan. Skala pH berkisar dari 0 sampai 14:
+    pH adalah ukuran konsentrasi ion hidrogen (H⁺) dalam larutan.
+    Skala pH berkisar dari 0 sampai 14:
     - pH < 7 : larutan bersifat asam
     - pH = 7 : larutan netral
     - pH > 7 : larutan bersifat basa
